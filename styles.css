@@ -1,0 +1,329 @@
+/* General */
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Geomanist Regular";
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+}
+
+h1 { font-size: 48px; margin: 20px 0; }
+h2 { font-size: 36px; margin: 0px }
+h3 { font-size: 30px; margin: 48px 0px 0px }
+h4 { font-size: 24px; margin: 48px 0px 0px }
+
+/* Left side */
+.left-side, .right-side {
+    width: 50vw;
+    height: 100vh;
+    position: relative;
+    font-family: Helvetica, Sans-Serif;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.left-side .left-side-background {
+    position: fixed;
+    z-index: -1;
+    width: inherit;
+    height: inherit;
+    background: url("photo/wallpaper.png") no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.left-side .left-side-container {
+    padding: 40px 85px 60px 60px;
+    height: 100%;
+    position: fixed;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    color: white;
+}
+
+.left-side .left-side-header {
+    display: flex;
+    align-items: center;
+}
+.left-side .left-side-header .profile-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.left-side .left-side-header .profile-info {
+    padding-left: 25px;
+    font-size: 18px;
+}
+.left-side .left-side-header .profile-info-descr {
+    display: flex;
+    align-items: center;
+}
+.left-side .left-side-header .profile-info-descr-line {
+    width: 19px;
+    height: 3px;
+    margin-right: 10px;
+    background:white;
+}
+
+.left-side .left-side-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.left-side .left-side-footer .go-to-website-link {
+    font-size: 16px;
+    display: flex;
+    color: white;
+}
+.left-side .left-side-footer .go-to-website-arrow {
+    padding-right: 10px;
+}
+.left-side .left-side-footer .go-to-website-text {
+    color: white;
+}
+.left-side .left-side-footer .go-to-website-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.left-side .left-side-footer .social-media-links {
+    display: flex;
+    flex-direction: column;
+}
+.left-side .left-side-footer .social-media-links a {
+    margin: 28px auto 0 auto;
+}
+.left-side .left-side-footer .social-media-links a:hover {
+    cursor: pointer;
+}
+
+/* Right side */
+.right-side .text {
+    font-family: Helvetica;
+    font-size: 16px;
+    padding-top: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    color: #2c2c35;
+}
+
+.right-side .right-side-container {
+    padding: 0 70px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.right-side .right-side-first-slide {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right-side .right-side-first-slide .title {
+    line-height: 1.21;
+    color: #2c2c35;
+}
+
+.right-side .right-side-first-slide .subtitle {
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    color: #2c2c35;
+}
+
+.right-side .right-side-first-slide .scroll-down-arrow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 9%;
+    -moz-animation: bounce 3s infinite;
+	-webkit-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
+}
+
+.right-side .mountain-lake-img {
+    float: left;
+    margin: 35px 35px 35px -70px;
+}
+
+.right-side .lake-img {
+    width: calc(100% + 140px);
+    margin: 40px -70px 0px -70px;
+}
+.right-side .lake-description {
+    padding: 8px 0;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    color: #ababab;
+}
+.right-side .lake-description hr {
+    background-color: #ababab;
+}
+
+.right-side .quote {
+    font-family: Roboto;
+    padding-top: 40px;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2c2c35;
+}
+
+.right-side .forest-img {
+    float: right;
+    margin: 35px -70px 0 35px;
+}
+.right-side .forest-text-and-img {
+    display: flex;
+}
+
+.right-side .subscribe-form {
+    margin: 70px -70px 0;
+    padding: 0 72px;
+    position: relative;
+    box-shadow: 0 0 17px 0 rgba(0, 0, 0, 0.15);
+    background-image: linear-gradient(to bottom, 
+        rgba(12, 12, 24, 0), 
+        rgba(155, 155, 231, 0) 70%, 
+        rgba(5, 5, 10, 0.12));
+}
+.right-side .subscribe-form .share-circle {
+    float: right;
+    display: flex;
+    position: absolute;
+    right: 70px;
+    width: 64px;
+    height: 64px;
+    background-color: #5a5aff;
+    border-radius: 50%;
+    margin-top: -16px;
+    align-items: center;
+    justify-content: center;
+}
+.right-side .subscribe-form .share-circle:hover {
+    background-color: #8181ff;
+}
+
+.right-side .subscribe-form .subscribe-form-content {
+    padding: 62px 0 72px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.right-side .subscribe-form .subscribe-form-content .profile-info {
+    color: #2c2c35;
+}
+
+.right-side .subscribe-form .subscribe-form-content .profile-logo {
+    border-radius: 50%;
+    margin-right: 32px;
+}
+.right-side .subscribe-form .subscribe-form-content .profile-info-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+.right-side .subscribe-form .subscribe-form-content .profile-info-descr {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 12px 0 25px;
+    line-height: 1.71;
+}
+.right-side .subscribe-form .subscribe-form-content .profile-info-subscribe-form {
+    display: flex;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05);
+    border: solid 1px #dfe2e6;
+    background-color: white;
+}
+.right-side .subscribe-form .subscribe-form-content .profile-info-subscribe-form img {
+    padding: 0 12px;
+}
+.right-side .subscribe-form .subscribe-form-content .profile-info-subscribe-form input {
+    border: 0;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 8px;
+}
+.right-side .subscribe-form .subscribe-form-content .profile-info-subscribe-form input:focus {
+    border: 0;
+    outline: none;
+}
+.right-side .subscribe-form .subscribe-form-content .profile-info-subscribe-form button {
+    width: 104px;
+    height: 38px;
+    border-radius: 20px;
+    padding: 0 16px;
+    background-color: #29b1cc;
+    border: 0;
+    font-size: 16px;
+    color: white;
+}
+
+.right-side .subscribe-form .subscribe-form-content .profile-info-subscribe-form button:hover {
+    background-color: #69c8db;
+    cursor: pointer;
+}
+
+
+@font-face {
+    font-family: "Geomanist Regular";
+    src: url("fonts/geomanist-regular.eot");
+    src: 
+    url("fonts/geomanist-regular.woff") format("woff"),
+    url("fonts/geomanist-regular.svg") format("svg"),
+    url("fonts/geomanist-regular.ttf") format("truetype"),
+    url("fonts/geomanist-regular.woff2") format("woff2");
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+}
